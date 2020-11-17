@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --mainColor: rgb(65, 109, 212);
+}
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+}
+hr {
+  border-color: var(--mainColor);
+}
+.container {
+  background: #fff;
+  width: 100%;
+  position: relative;
+  right: 0;
+  padding: 20px 0 20px 0;
+  
+}
+.user__profile {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 80px;
+  padding-top: 20px;
+}
+.img_pad {
+  background: var(--mainColor);
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  top: 140px;
+}
+.user__details {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0 0 0;
+  text-align: center;
+}
+.img {
+  width: 300px;
+  height: 300px;
+  background: rgb(227, 227, 227);
+  border-radius: 50%;
+  contain: content;
+  box-shadow: 0 0 0 10px #fff, 0 0 0 15px var(--mainColor);
+  margin-left: 150px;
+}
+.img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.user__details h1 {
+  color: var(--mainColor);
+  font-size: 40px;
+}
+.user__details p {
+  line-height: 0;
+  /* font-weight: 600; */
+}
+.user__details a {
+  color: var(--mainColor);
+}
+.content {
+  max-width: 85%;
+  margin: auto;
+}
+.content h4 {
+  font-weight: 900;
+  line-height: 0;
+  color: var(--mainColor);
+  margin: 40px 0 15px 0;
+  font-size: 18px;
+}
+.content p {
+  /* font-weight: 600; */
+}
+.content .profile p {
+  text-align: justify;
+  line-height: 1.5;
+}
+.content ul {
+  line-height: 1.5;
+  padding-inline-start: 15px;
+}
+.tech_skills ul li {
+  /* font-weight: 500; */
+  margin-left: 0;
+}
+.edu_1,
+.edu_2 {
+  /* outline: 1px solid green; */
+  position: relative;
+  line-height: 0.4;
+  padding-top: 10px;
+}
+.edu_1 h5,
+.edu_2 h5 {
+  display: inline;
+  font-size: large;
+}
+.edu_1 span,
+.edu_2 span {
+  position: absolute;
+  right: 0;
+}
+.work_exp {
+  position: relative;
+  margin-bottom: 0;
+}
+.work_exp h4 {
+  padding-bottom: 12px;
+}
+.work_exp p {
+  margin: 0;
+}
+
+.work_exp p:nth-of-type(2) {
+  display: inline;
+}
+.work_exp span {
+  position: absolute;
+  right: 0;
+}
+.images {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+.images img {
+  width: auto;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 50%;
+  padding-right: 15px;
+}
