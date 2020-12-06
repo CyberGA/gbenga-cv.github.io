@@ -9,6 +9,10 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #000;
+  color: #fff;
+  height: 100%;
+  max-width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -16,7 +20,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #009579;
+  background: #009579;;
 }
 
 ::-webkit-scrollbar-thumb {
