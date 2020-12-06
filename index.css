@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
+  min-width: 100vw;
 }
 hr {
   border-color: var(--mainColor);
@@ -18,18 +19,18 @@ hr {
   position: relative;
   right: 0;
   padding: 20px 0 20px 0;
-  
 }
 .user__profile {
   display: flex;
   gap: 50px;
+  flex-direction: column;
   margin-bottom: 80px;
   padding-top: 20px;
 }
 .img_pad {
   background: var(--mainColor);
   height: 100px;
-  width: 150px;
+  width: 100%;
   position: absolute;
   top: 140px;
 }
@@ -46,7 +47,7 @@ hr {
   border-radius: 50%;
   contain: content;
   box-shadow: 0 0 0 10px #fff, 0 0 0 15px var(--mainColor);
-  margin-left: 150px;
+  margin: 0 auto 0 auto;
 }
 .img img {
   width: 300px;
