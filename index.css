@@ -1,141 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 * {
-  box-sizing: border-box;
-}
-:root {
-  --mainColor: rgb(65, 109, 212);
-}
-body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  min-width: 100vw;
-}
-hr {
-  border-color: var(--mainColor);
-}
-.container {
-  background: #fff;
-  width: 100%;
-  position: relative;
-  right: 0;
-  padding: 20px 0 20px 0;
-}
-.user__profile {
-  display: flex;
-  gap: 50px;
-  flex-direction: column;
-  margin-bottom: 80px;
-  padding-top: 20px;
-}
-.img_pad {
-  background: var(--mainColor);
-  height: 100px;
-  width: 100%;
-  position: absolute;
-  top: 140px;
-}
-.user__details {
-  display: flex;
-  flex-direction: column;
-  margin: 8px 0 0 0;
-  text-align: center;
-}
-.img {
-  width: 300px;
-  height: 300px;
-  background: rgb(227, 227, 227);
-  border-radius: 50%;
-  contain: content;
-  box-shadow: 0 0 0 10px #fff, 0 0 0 15px var(--mainColor);
-  margin: 0 auto 0 auto;
-}
-.img img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-.user__details h1 {
-  color: var(--mainColor);
-  font-size: 40px;
-}
-.user__details p {
-  line-height: 0;
-  /* font-weight: 600; */
-}
-.user__details a {
-  color: var(--mainColor);
-}
-.content {
-  max-width: 85%;
-  margin: auto;
-}
-.content h4 {
-  font-weight: 900;
-  line-height: 0;
-  color: var(--mainColor);
-  margin: 40px 0 15px 0;
-  font-size: 18px;
-}
-.content p {
-  /* font-weight: 600; */
-}
-.content .profile p {
-  text-align: justify;
-  line-height: 1.5;
-}
-.content ul {
-  line-height: 1.5;
-  padding-inline-start: 15px;
-}
-.tech_skills ul li {
-  /* font-weight: 500; */
-  margin-left: 0;
-}
-.edu_1,
-.edu_2 {
-  /* outline: 1px solid green; */
-  position: relative;
-  line-height: 0.4;
-  padding-top: 10px;
-}
-.edu_1 h5,
-.edu_2 h5 {
-  display: inline;
-  font-size: large;
-}
-.edu_1 span,
-.edu_2 span {
-  position: absolute;
-  right: 0;
-}
-.work_exp {
-  position: relative;
-  margin-bottom: 0;
-}
-.work_exp h4 {
-  padding-bottom: 12px;
-}
-.work_exp p {
-  margin: 0;
+  padding: 0;
 }
 
-.work_exp p:nth-of-type(2) {
-  display: inline;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.work_exp span {
-  position: absolute;
-  right: 0;
+
+::-webkit-scrollbar {
+  width: 8px;
 }
-.images {
+
+::-webkit-scrollbar-track {
+  background: #009579;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0affd2), color-stop(transparent), color-stop(transparent), to(#0affd2));
+  background: linear-gradient(#0affd2, transparent, transparent, #0affd2);
+  border-radius: 10px;
+}
+
+.main {
+  height: 100vh;
+  /* padding-left: 20vw; */
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+          margin: 0 auto 0 auto;
+}
+
+.main .resume {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .resume {
+    width: 90%;
+  }
+}
+
+.main .resume__header {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 10px;
+  text-align: center;
 }
-.images img {
-  width: auto;
-  height: 300px;
-  object-fit: contain;
-  border-radius: 50%;
-  padding-right: 15px;
+
+.main .resume__header .profileName {
+  color: #009579;
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .resume__header .address {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.main .resume__header .address a {
+  color: #009579;
+}
+
+.main .resume__header .address a:hover {
+  color: #016f5b;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .resume__header .profileName {
+    font-size: 22px;
+  }
+  .main .resume__header .address {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+.main .resume__body {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .resume__body hr {
+  border-color: #0affd2;
+}
+
+.main .resume__body .introProfile {
+  margin-top: 40px;
+}
+
+.main .resume__body .introProfile h4,
+.main .resume__body .techSkills h4,
+.main .resume__body .education h4,
+.main .resume__body .workExperience h4,
+.main .resume__body .softSkills h4 {
+  color: #009579;
+  padding-bottom: 6px;
+}
+
+.main .resume__body .techSkills,
+.main .resume__body .education,
+.main .resume__body .workExperience,
+.main .resume__body .softSkills {
+  margin-top: 20px;
+}
+
+.main .resume__body .introProfile p {
+  text-align: justify;
+  padding-top: 10px;
+  line-height: 1.4;
+}
+
+.main .resume__body .techSkills ul {
+  line-height: 1.4;
+  padding-top: 10px;
+  -webkit-margin-start: 1em;
+          margin-inline-start: 1em;
+}
+
+.main .resume__body .education .edu-1,
+.main .resume__body .education .edu-2 {
+  padding-top: 10px;
+  position: relative;
+}
+
+.main .resume__body .education .edu-1 .date,
+.main .resume__body .education .edu-2 .date {
+  text-align: right;
+  font-family: "Righteous", cursive;
+  text-decoration: underline;
+}
+
+.main .resume__body .workExperience {
+  position: relative;
+}
+
+.main .resume__body .workExperience__role {
+  display: inline;
+}
+
+.main .resume__body .workExperience span {
+  position: absolute;
+  right: 0;
+  font-family: "Righteous", cursive;
+  text-decoration: underline;
+}
+
+.main .resume__body .workExperience ul {
+  padding-top: 10px;
+  line-height: 1.4;
+  -webkit-margin-start: 1em;
+          margin-inline-start: 1em;
+}
+
+.main .resume__body .softSkills {
+  margin-bottom: 60px;
+}
+
+.main .resume__body .softSkills ul {
+  -webkit-margin-start: 1em;
+          margin-inline-start: 1em;
+  padding-top: 10px;
+  line-height: 1.4;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .resume__body h4 {
+    font-size: 14px;
+  }
+  .main .resume__body p,
+  .main .resume__body li {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .main .resume__body p {
+    text-align: justify;
+  }
+  .main .resume__body span,
+  .main .resume__body .date {
+    font-size: 12px;
+    line-height: 1;
+  }
+  .main .resume__body span {
+    line-height: 2.2;
+  }
 }
